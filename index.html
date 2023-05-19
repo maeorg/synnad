@@ -19,11 +19,32 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', () => {
+                const synnaKatrina = new Date("1987-04-27");
+                const synnaKristina = new Date("1985-06-01");
+                const synnaJohannes = new Date("1990-06-24");
                 const synnaAaron = new Date("2012-07-30");
                 const synnaAurora = new Date("2014-05-18");
                 const synnaAmari = new Date("2016-06-15");
                 const synnaArman = new Date("2018-09-22");
                 const synnaAriana = new Date("2022-09-26");
+                
+                document.querySelector('#katrina').onclick = () => {  
+                    var days = calculate_days(synnaKatrina)
+                    document.querySelector('h2').innerHTML = 'KATRINA';
+                    document.querySelector('h1').innerHTML = days;
+                }
+                
+                document.querySelector('#kristina').onclick = () => {  
+                    var days = calculate_days(synnaKristina)
+                    document.querySelector('h2').innerHTML = 'KRISTINA';
+                    document.querySelector('h1').innerHTML = days;
+                }
+                
+                document.querySelector('#johannes').onclick = () => {  
+                    var days = calculate_days(synnaJohannes)
+                    document.querySelector('h2').innerHTML = 'JOHANNES';
+                    document.querySelector('h1').innerHTML = days;
+                }
 
                 document.querySelector('#aaron').onclick = () => {  
                     var days = calculate_days(synnaAaron)
